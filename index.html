@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<title>KARNATAKA TOURISM</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<!--[if IE 7]>
+			<link rel="stylesheet" href="css/ie7.css" type="text/css" />
+		<![endif]-->
+		
+	</head>
+	<body>
+
+		<script>
+			window.onload = function() {
+			  alert("hello professor Ozaydin!");
+			};
+		  </script>
+		<div class="page">
+			<div class="header">
+				<a href="index.html" id="logo"><img src="images/logo.gif" alt=""/></a>
+				<ul>
+					<li class="selected"><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<!--<li><a href="services.html">Services</a></li>-->
+				</ul>
+			</div>
+			<div class="body">
+				<div id="featured">
+					<h3>Welcome to my Website!</h3>
+					<h3 style="color: black; font-family:'Times New Roman', Times, serif;">Changes that I've implemented</h3>
+					<H5>1. Style(CSS):</H5>
+						<p>a. Background: The page containing background image was changed to background color: #f2e8b5.</p>
+						<p>b. Pictures: Added and deleted multiple pictures in the website.</p>
+
+					<h5>2. Javascript(JS):</h5>
+						<p>a. Popup: A welcome popup witten in JS was added everytime the page loads.</p>
+						<p>b. User Input: A user input JS function was added to take user's name and greet them (in HOME page). </p>
+
+					<h5>3. Footer:</h5>
+						<p>a. Footer was changed by adding my name and my Student ID and deleting unwanted details.</p>
+
+					<h5>4. Content:</h5>
+						<p>a. Information about KARNATAKA was added. </p>
+						<p>b. Added and deleted multiple pictures in the website.<br><br></p>
+				</div>
+				<div class="greeting-container" id="greetingContainer">
+					<p id="greetingMessage" style="float:initial;"></p>
+				  </div>
+				  
+				  <input type="text" id="userName" placeholder="Enter your name" style="float: left;">
+				  <button onclick="showGreeting()" style="float: left;">Greet Me!</button>
+
+				  <p><br><br><br></p>
+				  <script>
+					function showGreeting() {
+					  const userName = document.getElementById('userName').value;
+					  
+					  if (userName) {
+						const greetingContainer = document.getElementById('greetingContainer');
+						document.getElementById('greetingMessage').textContent = `Hello, ${userName}! Welcome to our website.`;
+						greetingContainer.style.display = 'block';
+					  } else {
+						alert("Please enter your name.");
+					  }
+					}
+				  </script>
+				
+			</div>
+			<div class="footer">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="about.html">About</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<!--<li><a href="services.html">Gallery</a></li>-->
+				</ul>
+				<div class="container">
+					<h4>ONKIK NANDY; Student ID: 24224541</h4>
+				  </div>
+				
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>  
